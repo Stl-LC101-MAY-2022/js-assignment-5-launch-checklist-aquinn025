@@ -89,8 +89,11 @@ function validateInput(testInput) {
  }
  
  function pickPlanet(planets) {
-    
+    let i = Math.floor(Math.random() * planets.length) ;
+    return planets[i];
+
    }
+ 
 
 module.exports.addDestinationInfo = addDestinationInfo;
 module.exports.validateInput = validateInput;
